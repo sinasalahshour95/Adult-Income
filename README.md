@@ -22,8 +22,8 @@ The pipeline is split modularly into two key notebooks:
 ### 2. Class Imbalance Resampling Methods
 To address class imbalance (where `<=50K` dominates `>50K`), five alternative training configurations were generated and cross-compared:
 - **Original Data:** The baseline dataset without modifications.
-- **Random Over-Sampling (ROS).
-- **SMOTE (Synthetic Minority Over-sampling Technique).
+- **Random Over-Sampling (ROS)**.
+- **SMOTE (Synthetic Minority Over-sampling Technique)**.
 - **SMOTETomek:** Combines SMOTE over-sampling with Tomek Links under-sampling to clear ambiguous noisy boundaries.
 - **Deep Autoencoder (AE):** Trains a specialized Keras Autoencoder model to capture the reconstruction distribution of the data, utilizing it to generate unique synthesized minority class samples.
 
@@ -45,7 +45,7 @@ The project comprehensively trains, tunes, and evaluates a wide portfolio of est
 4. **Gradient Boosting Classifier (GBC)**
 5. **Balanced Random Forest Classifier** (specialized for imbalanced learning)
 6. **XGBoost Classifier**
-7. **Neural Network with RBF Activation / Deep Neural Networks** (Hyperparameter-tuned using Keras Tuner)
+7. **Neural Network with RBF Activation** (Hyperparameter-tuned using Keras Tuner)
 
 # Dataset
 This project utilizes the **Adult Income Dataset. 
