@@ -48,4 +48,4 @@ The project comprehensively trains, tunes, and evaluates a wide portfolio of est
 7. **Neural Network with RBF Activation** (Hyperparameter-tuned using Keras Tuner)
 
 # Dataset
-This project utilizes the **Adult Income Dataset. 
+This project utilizes the **Adult Income Dataset**. 
