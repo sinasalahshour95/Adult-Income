@@ -5,8 +5,6 @@ An end-to-end, production-grade machine learning project demonstrating a robust 
 # Project Overview
 Predicting income level from census metrics is a classic classification challenge often constrained by extreme class imbalance and high-dimensional categorical features. This project acts as a comparative framework demonstrating how different data balancing strategies (including standard resampling and a deep Autoencoder) combined with distinct feature selection filters/wrappers impact the predictive performance of traditional and ensemble machine learning algorithms. 
 
-The pipeline is split modularly into two key notebooks: 
-
 The pipeline is split modularly into two key notebooks:
 1. **`Adult_Income.ipynb`**: Handles exploratory analysis, robust data cleaning, log transformations, categorical encoding, feature selection, and data resampling.
 2. **`Training_AdultIncom.ipynb`**: Focuses on model selection, efficient hyperparameter tuning using successive halving, custom decision-boundary threshold tuning, and final metric comparisons.
@@ -29,7 +27,7 @@ To address class imbalance (where `<=50K` dominates `>50K`), five alternative tr
 
 ### 3. Feature Selection Strategies
 - **Low-Variance Filter:** Eliminates constant or near-constant features.
-- **Tree-Based Importance:** Evaluates feature utility using embedded tree weights.
+- **Tree-Based Importance**
 - **Mutual Information (MI):** Calculates information gain metrics between features and target.
 - **Recursive Feature Elimination (RFE):** Employs wrapper-based recursive cross-validation (`RFECV`) to filter out less descriptive parameters.
 
